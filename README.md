@@ -1,16 +1,39 @@
-# SATM Engineering Website
+# SATM Engineering Blog
 
-This repository contains the Hugo sources for the SATM Engineering website, including a vendored copy of the Hugoplate theme and starter content.
+This repository contains the source for the SATM Engineering blog built with [Jekyll](https://jekyllrb.com/).
 
 ## Getting started
 
-1. Install the [Hugo extended](https://gohugo.io/installation/) binary.
-2. Run `hugo server` to start a local development server.
-3. Visit `http://localhost:1313` to preview changes.
+1. Install Ruby (version 3.0 or later is recommended) and [Bundler](https://bundler.io/).
+2. Install dependencies:
 
-## Structure
+   ```bash
+   bundle install
+   ```
 
-- `config/_default/` – Hugo configuration files and site parameters.
-- `content/` – Markdown pages and blog posts.
-- `themes/hugoplate/` – Vendored Hugoplate theme adapted for SATM Engineering.
-- `static/` – Static assets published as-is, including the `CNAME` file for custom domains.
+3. Run the development server:
+
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+   The site will be available at <http://127.0.0.1:4000/>.
+
+## Project structure
+
+- `_config.yml` – Site configuration and metadata.
+- `_layouts/` – HTML templates for pages and posts.
+- `_posts/` – Blog posts written in Markdown with filenames like `YYYY-MM-DD-title.md`.
+- `assets/css/` – Site styling.
+- `index.md` – Homepage with the latest posts.
+- `about.md` – About page for SATM Engineering.
+
+## Deployment
+
+Build the production site with:
+
+```bash
+bundle exec jekyll build
+```
+
+The generated site will be output to the `_site/` directory.
