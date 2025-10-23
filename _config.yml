@@ -1,0 +1,28 @@
+title: SATM Engineering Blog
+email: info@satmengineering.com
+description: >-
+  Engineering insights, project updates, and lessons learned from the SATM Engineering team.
+baseurl: ""
+url: "https://satmengineering.com"
+permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: SATM Engineering
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+      author: SATM Engineering
