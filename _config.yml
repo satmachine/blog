@@ -3,7 +3,7 @@ email: info@satmengineering.com
 description: >-
   Engineering insights, project updates, and lessons learned from the SATM Engineering team.
 baseurl: ""
-url: "https://satmengineering.com"
+url: "https://satm.engineering"
 permalink: /:categories/:year/:month/:day/:title/
 markdown: kramdown
 kramdown:
