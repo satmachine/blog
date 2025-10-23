@@ -1,0 +1,32 @@
+title: SATM Engineering
+email: hello@satm.engineering
+description: >-
+  SATM Engineering delivers resilient systems engineering, security reviews,
+  and software craftsmanship for mission-critical teams.
+baseurl: ""
+url: "https://satm.engineering"
+permalink: /:categories/:year/:month/:day/:title/
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-feed
+collections:
+  services:
+    output: true
+    permalink: /services/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  team:
+    output: true
+    permalink: /team/:name/
+
+# Navigation links rendered by minima
+minima:
+  nav_pages:
+    - about.md
+    - services.md
+    - projects.md
+    - contact.md
