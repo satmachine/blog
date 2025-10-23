@@ -1,0 +1,44 @@
+[[main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[main]]
+  name = "Services"
+  url = "/services/"
+  weight = 2
+
+[[main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 3
+
+[[main]]
+  name = "Insights"
+  url = "/blog/"
+  weight = 4
+
+[[main]]
+  name = "About"
+  url = "/about/"
+  weight = 5
+
+[[main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 6
+
+[[footer]]
+  name = "Careers"
+  url = "/careers/"
+  weight = 1
+
+[[footer]]
+  name = "Privacy"
+  url = "/privacy/"
+  weight = 2
+
+[[footer]]
+  name = "Security"
+  url = "/security/"
+  weight = 3

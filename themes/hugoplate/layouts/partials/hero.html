@@ -1,0 +1,29 @@
+{{- $hero := site.Params.hero -}}
+<section class="bg-gradient-to-br from-primary/10 via-white to-white py-20">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2">
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary">SATM Engineering</p>
+      <h1 class="mt-4 text-4xl font-bold text-slate-900 sm:text-5xl">{{ $hero.title }}</h1>
+      <p class="mt-6 text-lg leading-relaxed text-slate-600">{{ $hero.subtitle }}</p>
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a href="{{ $hero.primaryButtonLink }}" class="inline-flex items-center justify-center rounded bg-primary px-6 py-3 text-sm font-semibold text-white shadow">
+          {{ $hero.primaryButtonText }}
+        </a>
+        <a href="{{ $hero.secondaryButtonLink }}" class="inline-flex items-center justify-center rounded border border-primary px-6 py-3 text-sm font-semibold text-primary">
+          {{ $hero.secondaryButtonText }}
+        </a>
+      </div>
+    </div>
+    <div class="rounded-2xl bg-white p-8 shadow-lg">
+      <h2 class="text-xl font-semibold text-slate-900">Our Impact</h2>
+      <ul class="mt-4 space-y-3 text-sm text-slate-600">
+        {{ range site.Params.values }}
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-primary"></span>
+            <span><strong>{{ .title }}</strong> – {{ .description }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>

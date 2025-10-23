@@ -1,0 +1,15 @@
+baseURL = "https://satm.engineering/"
+title = "SATM Engineering"
+theme = "hugoplate"
+defaultContentLanguage = "en"
+languageCode = "en-us"
+
+[permalinks]
+  blog = "/blog/:slug/"
+  projects = "/projects/:slug/"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false
